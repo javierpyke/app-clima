@@ -1,0 +1,205 @@
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+header{
+  border-bottom: gray;
+  box-shadow: 1px 1px 10px gainsboro;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: whitesmoke;
+  background-color: #282c34;
+  margin-bottom: 20px;
+}
+
+.titulo{
+  font-size: 50px;
+  font-weight: 300;
+}
+
+header a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+header img{
+  width: 100px;
+  height: 100px;
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 10px;
+  align-items: flex-end;
+
+}
+
+.input input{
+  margin-bottom: 5px;
+  width: 20%;
+  padding-left: 10px;
+  height: 30px;
+  border:1px solid rgba(0,0,0,.125);
+  border-radius:4px;
+  box-shadow: 1px 1px 10px whitesmoke;
+}
+
+.tarjeta{
+    box-sizing: border-box;
+    width: 30%;
+    text-align: center;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius:4px;
+    box-shadow: 1px 1px 10px whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-bottom: 20px;
+}
+
+
+.tarjeta-cabecera{
+  width: 100%;
+  color: #757575;
+  background-color:rgba(0,0,0,.03);
+  margin: 0 auto;
+  align-items: center;
+}
+
+.tarjeta-cabecera h2{
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.tarjeta-cuerpo{
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.tarjeta-cuerpo ul{
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+.tarjeta-cuerpo ul a{
+  color: #757575;
+  text-decoration: none;
+}
+
+.maxima{
+  font-weight: 300;
+  color: #c00101;
+}
+
+.minima{
+  font-weight: 300;
+  color: #a3a3a3;
+}
+
+.ciudad{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ciudad h2{
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.ciudad h2 small{
+  font-weight: 300;
+}
+
+.back{
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+footer{
+  color: whitesmoke;
+  background-color: #282c34;
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.github{
+  display: flex;
+  align-items: center;
+}
+
+footer a{
+  margin-left: 5px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+
+@media only screen and (max-width:1050px) {
+  .container, .input, .back {
+    width:100%;
+  }
+  .ciudad{
+    width:90%;
+  }
+}
+
+@media only screen and (max-width:715px) {
+  .tarjeta {
+    width:45%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .titulo{
+    font-size: 30px;
+  }
+  header{
+    height: 60px;
+  }
+  header img{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  .container, .input{
+    justify-content: center;
+  }
+  .tarjeta {
+    width:90%;
+  }
+}
