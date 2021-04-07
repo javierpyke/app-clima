@@ -6,6 +6,8 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 /* APP CLIMA*/
 
+
+
 const App = () => (
         <div className="App">
           <Header />
