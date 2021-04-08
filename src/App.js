@@ -1,5 +1,4 @@
 import { Switch,Route} from 'react-router-dom'
-import './App.css';
 import Ciudad from './components/Ciudad'
 import Ciudades from './components/Ciudades'
 import Header from './components/Header'

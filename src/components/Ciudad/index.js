@@ -1,6 +1,5 @@
 import {useState,useEffect} from 'react';
 import { Link,useParams } from 'react-router-dom'
-import '../../App.css';
 import meses from '../../meses.js'
 import Tarjeta from '../Tarjeta'
 

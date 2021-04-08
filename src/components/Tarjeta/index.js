@@ -1,5 +1,3 @@
-
-
 function Tarjeta (props){
     return(
         <div className="tarjeta">
