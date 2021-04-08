@@ -3,9 +3,8 @@ import Ciudad from './components/Ciudad'
 import Ciudades from './components/Ciudades'
 import Header from './components/Header'
 import Footer from './components/Footer'
+
 /* APP CLIMA*/
-
-
 
 const App = () => (
         <div className="App">
