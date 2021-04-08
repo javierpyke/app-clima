@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react';
-import {NavLink} from 'react-router-dom'
+import TarjetasCiudades from '../TarjetaCiudades'
 
 
 const Ciudades = () => {
@@ -37,16 +37,8 @@ const Ciudades = () => {
         </div>
         <div className="container">      
             {letras.map((letra,k)=> 
-                <div className="tarjeta" key={k}>
-                  <div className="tarjeta-cabecera">
-                    <h2>Ciudades que empiezan con {letra}</h2>
-                  </div>
-                  <div className="tarjeta-cuerpo">
-                    <ul>
-                      {ciudades.filter(ciudad => ciudad.city[0] === letra).map(ciudad => <li key={ciudad.id}><NavLink to={"/ciudad/"+ciudad.id}>{ciudad.city}</NavLink></li>)}
-                    </ul>
-                  </div>
-                </div>)}
+                <TarjetasCiudades k={k} letra={letra} ciudades={ciudades} />
+                )}
           </div>
         </div>     
         )

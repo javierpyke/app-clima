@@ -1,7 +1,7 @@
 import {useState,useEffect} from 'react';
 import { Link,useParams } from 'react-router-dom'
-import meses from '../../meses.js'
-import Tarjeta from '../Tarjeta'
+import meses from '../../resources/meses.js'
+import TarjetaTemperatura from '../TarjetaTemperatura'
 
 const Ciudad = () => {
     let params = useParams();
@@ -27,7 +27,7 @@ const Ciudad = () => {
           <h2>{pais.country} <small>&gt; {pais.city}</small></h2>
         </div>
         <div className="container">
-          {pais.monthlyAvg.map((mes,i)=> <Tarjeta key={i} mes={meses[i]} high={mes.high} low={mes.low} dryDays={mes.dryDays} snowDays={mes.snowDays} rainfall={mes.rainfall}/>)}
+          {pais.monthlyAvg.map((mes,i)=> <TarjetaTemperatura key={i} mes={meses[i]} high={mes.high} low={mes.low} dryDays={mes.dryDays} snowDays={mes.snowDays} rainfall={mes.rainfall}/>)}
         </div>
         <div className='back'><Link to="/"><img src='../img/back.png' alt='back' title='back' width="30" height="30"/></Link></div>
         </>

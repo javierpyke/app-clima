@@ -1,5 +1,13 @@
 $color-primario: whitesmoke;
 
+@mixin flex-container($justify-content,$flex-wrap,$align-items,$flex-direction){
+  display: flex;
+  justify-content: $justify-content;
+  flex-wrap: $flex-wrap;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+
 body{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,13 +22,11 @@ header{
   border-bottom: gray;
   box-shadow: 1px 1px 10px gainsboro;
   height: 120px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  align-items: center;
   color: $color-primario;
   background-color: #282c34;
   margin-bottom: 20px;
+
+  @include flex-container(space-around,nowrap,center,row);
 
   a {
     text-decoration: none;
@@ -44,19 +50,17 @@ header{
   width: 70%;
   margin: 0 auto;
   margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+ 
+  @include flex-container(space-between,wrap,stretch,row);
 }
 
 .input{
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   width: 70%;
   margin-bottom: 10px;
-  align-items: flex-end;
 
+  @include flex-container(flex-start,wrap,flex-end,column);
+  
   input{
     margin-bottom: 5px;
     width: 170px;
@@ -77,10 +81,9 @@ header{
     border:1px solid rgba(0,0,0,.125);
     border-radius:4px;
     box-shadow: 1px 1px 10px $color-primario;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
     margin-bottom: 20px;
+
+    @include flex-container(flex-start,wrap,flex-start,row);
 }
 
 
@@ -89,8 +92,7 @@ header{
   color: #757575;
   background-color:rgba(0,0,0,.03);
   margin: 0 auto;
-  align-items: center;
-
+ 
   h2{
     font-weight: 300;
     font-size: 18px;
@@ -128,11 +130,9 @@ header{
 .ciudad{
   width: 70%;
   margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  align-items: center;
   margin-bottom: 20px;
+
+  @include flex-container(flex-start,nowrap,center,row);
 
   h2{
     margin-left: 10px;
@@ -154,10 +154,8 @@ footer{
   color: $color-primario;
   background-color: #282c34;
   padding: 20px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
+  
+  @include flex-container(space-around,nowrap,center,row);
 
   a{
     margin-left: 5px;
