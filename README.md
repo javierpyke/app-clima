@@ -1,10 +1,17 @@
-# App Clima
+# App Clima ☀️
 
-## App Web con temperaturas promedios de ciudades
+_Aplicación que muestra el promedio de diferentes ciudades_
 
-Aplicacion hecha con React que consulta datos en un JSON externo: https://raw.githubusercontent.com/michaelx/climate/master/climate.json
-y dado un listado de ciudades las cuales se pueden buscar por nombre o por pais, muestra el promedio de temperaturas, dias secos, dias de lluvia y dias de nieve mes a mes.
+_Todos los datos necesarios, están en la [siguiente API]( https://raw.githubusercontent.com/michaelx/climate/master/climate.json)_
+
+## [APLICACION](https://javier-clima-app.herokuapp.com/) ⚡ 
 
 
+## Construido con 🛠️
 
-### Aplicación: https://javier-clima-app.herokuapp.com/
+![](https://img.shields.io/badge/%3E-React-blue) ![](https://img.shields.io/badge/%3E-Sass-ff69ba)
+
+
+---
+Gracias [Villanuevand](https://github.com/Villanuevand) por esta genial plantilla!
+
